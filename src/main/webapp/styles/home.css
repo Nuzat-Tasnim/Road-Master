@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .logo {
+    font-family: 'Faster One', cursive;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.navbar .logo .small {
+    font-size: 18px;
+}
+
+.navbar .user-options {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.navbar .user-options .name {
+    margin-right: 16px;
+}
+
+.navbar .user-options .icon {
+    margin: 5px 10px;
+}
+
+.navbar .user-options .icon-link {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.navbar .user-options .icon-link:hover {
+    transform: scale(1.2);
+}
+
+.dashboard {
+    width: 100%;
+    padding: 60px 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.dashboard a {
+    text-decoration: none;
+}
+
+.dashboard .card {
+    width: 200px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.dashboard .card .big {
+    font-size: 32px;
+    text-decoration: none;
+}
+
+.dashboard .card .small {
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.dashboard .card .icon {
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    font-size: 128px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.1);
+    bottom: -30px;
+    right: -30px;
+    transition: transform 0.3s;
+}
+
+.dashboard .card:hover .icon {
+    transform: translate(-30px, -30px);
+}

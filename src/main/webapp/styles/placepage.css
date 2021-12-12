@@ -1,0 +1,247 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 500px;
+    max-width: 100vw;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: gray;
+    color: white;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+.header .user-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.header .user-name .icon {
+    margin: 0px 5px;
+}
+
+.header .user-name .name {
+    font-size: 16px;
+}
+
+.header .home-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff4a4a;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.header .home-link .icon {
+    margin: 0px 5px;
+}
+
+.header .home-link .text {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.place-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.place-description {
+    color: gray;
+    margin: 0px 10px;
+}
+
+.place-name-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.settings {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    color: gray;
+}
+
+.settings .icon {
+    margin: 0px 2px;
+    cursor: pointer;
+    color: gray;
+}
+
+.place-name-container .location-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+    color: gray;
+}
+
+.place-name-container .location-name {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0px 10px;
+    color: gray;
+}
+
+.place-name-container .location-edit-icon {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    color: gray;
+}
+
+.bookmark-form {
+    margin: 0;
+}
+
+.bookmark-form .form-btn {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0;
+}
+
+.tab-headers {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    background-color: gray;
+    border-radius: 2px;
+}
+
+.tab-headers span {
+    background-color: gray;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.tab-headers .active {
+    background-color: #ff4a4a;
+    color: white;
+}
+
+.tab-body {
+    width: 100%;
+}
+
+.tab-body .list-item {
+    width: 100%;
+    background-color: #ebebeb;
+    padding: 10px;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    border-left: 4px solid transparent;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.tab-body .list-item:hover {
+    background-color: #dbdbdb;
+    border-left: 4px solid #ff4a4a;
+}
+
+.tab-body .list-item-simple {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 5px;
+    margin-top: 2px;
+    box-sizing: border-box;
+    background-color: #ebebeb;
+    border-radius: 2px;
+}
+
+.list-item-simple .icon-yes {
+    color: green;
+    margin: 0px 10px;
+}
+
+.list-item-simple .icon-no {
+    color: #ff4a4a;
+    margin: 0px 10px;
+}
+
+.review-header {
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.review-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.review-inp {
+    width: 100%;
+    margin: 2px 0px;
+    resize: none;
+    border: 2px solid gray;
+    border-radius: 2px;
+    height: 60px;
+}
+
+.review-form .submit-btn {
+    border: none;
+    color: white;
+    background-color: #ff4a4a;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    color: gray;
+    background-color: #ebebeb;
+    border-radius: 2px;
+    font-size: 14px;
+    padding: 10px 0px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-left: 4px solid transparent;
+}
+
+.review:hover {
+    border-left: 4px solid #ff4a4a;
+    background-color: #dbdbdb;
+}
+
+.review .name {
+    font-weight: bold;
+    margin: 0px 10px;
+}
+
+.review .text {
+    margin: 5px 10px;
+}
